@@ -1,13 +1,99 @@
 <!DOCTYPE html>
-<html>
+{% load static %}
+
+<html lang="sr">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>FORMA</title>
+
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
 </head>
+
 <body>
 
-<h1>Welcome to FORMA!</h1>
+    <header class="navbar">
+        <div class="logo">FORMA</div>
 
-<p>This is our first Django page.</p>
+        <nav>
+            <a href="#">Početna</a>
+            <a href="#">O nama</a>
+            <a href="#">Treninzi</a>
+            <a href="#">Studio</a>
+            <a href="#">Kontakt</a>
+        </nav>
+    </header>
+
+    <!-- HERO SEKCIJA -->
+    <section class="hero">
+        <img
+            src="{% static 'core/images/home picture.jpg' %}"
+            alt="FORMA Pilates studio"
+            class="hero-image"
+        >
+
+        <div class="hero-overlay">
+            <h1>FORMA</h1>
+            <p>PILATES & NUTRITION</p>
+        </div>
+    </section>
+
+
+    <!-- O MENI -->
+    <section class="about">
+
+        <div class="about-image-wrapper">
+            <img
+                src="{% static 'core/images/profile picture.jpg' %}"
+                alt="Ina Jerotić"
+                class="about-image"
+            >
+        </div>
+
+        <div class="about-content">
+
+            <h2>Zdravo!</h2>
+
+            <p>
+                Ja sam Iva Jevtović, diplomirani nutricionista-dijetetičar i
+                sertifikovani pilates instruktor (Reformer & Chair), kao i osnivač FORME — prvog studija
+                u Čačku koji objedinjuje pilates i stručni nutricionizam.
+            </p>
+
+            <p>
+                Moja stručna podloga potiče sa Visoke zdravstvene škole
+                strukovnih studija u Beogradu, a praktično iskustvo gradila
+                sam kroz praktični rad u kliničkim i primarnim zdravstvenim
+                ustanovama.
+            </p>
+
+            <p>
+                Forma je nastala iz ljubavi prema zdravom načinu života
+                i želje da stvorim mesto gde ljudi uče kako da se ponovo
+                osećaju dobro u svom telu.
+            </p>
+
+            <p>
+                Za mene, zdrava ishrana nije restriktivna dijeta, a pilates nije samo trening.
+                To je celovit pristup zdravlju, razumevanju sopstvenog tela i izgradnji dobrih navika.
+                Izbalansirana ishrana čuva naše zdravlje i prevenira oboljenja, dok pilates popravlja držanje,
+                jača telo i efikasno oslobađa od bolova u leđima i vratu uzrokovanih svakodnevnim stresom i sedenjem.
+
+            </p>
+
+            <p>
+                Šta vas očekuje u FORMI?
+                Pilates na spravama: Vežbamo na Reformeru, najpoznatijoj i najefikasnijoj spravi u svetu pilatesa, kao i na Pilates Chair-u — spravi koja pruža fantastičan izazov, razvija snagu i stabilnost i omogućava raznovrsne i dinamične treninge.
+                Individualizovana ishrana: Pomažemo svim generacijama — od dece i odraslih, do trudnica i porodilja. Posebno smo posvećeni izradi nutritivnih terapija za specifična stanja poput gojaznosti, metaboličkih i hormonskih poremećaja (dijabetes, Hašimoto, štitna žlezda), digestivnih smetnji (gastritis, intolerancija na laktozu i gluten, celijakija), poremećaja ishrane (anoreksija i bulimija), ali i radu sa svima koji jednostavno žele da unaprede svoj životni stil.
+                Naš studio je koncipiran kao elegantan, prozračan i topao prostor u kome je svaki detalj podređen vašem užitku i napretku.
+                Naš cilj je jasan: da vam pomognemo da postanete jači, zdraviji i zadovoljniji u svojoj koži.
+                Dobrodošli u FORMU — mesto gde telo i um konačno dolaze u potpunu harmoniju.
+            </p>
+
+        </div>
+
+    </section>
 
 </body>
 </html>
