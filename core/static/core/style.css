@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -142,6 +146,7 @@ body {
 }
 
 .about-content h2 {
+    font-family: "Cormorant Garamond", serif;
     font-size: 65px;
     font-weight: 400;
 
@@ -149,10 +154,25 @@ body {
 }
 
 .about-content p {
-    font-size: 17px;
+    font-family: "Lora", serif;
+    font-size: 20px;
     line-height: 1.8;
 
     margin-bottom: 22px;
+}
+
+/* =================================
+
+    TRAINING
+
+================================= */
+
+.training-grid p {
+    font-size: 20px;
+    line-height: 7;
+
+    margin-bottom: 22px;
+    margin-left : 400px
 }
 
 
@@ -189,6 +209,142 @@ body {
 
     .about-content p {
         font-size: 16px;
+    }
+
+}
+
+/* =================================
+   CONTACT
+================================= */
+
+.contact-section {
+    font-family: "Lora", serif;
+    padding: 80px 0 40px;
+    background-color: #f7f4ef;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.contact-box {
+    background-color: #eee9e2;
+
+    position: relative;
+    min-height: 220px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 25px 30px;
+
+    border: none;
+
+    text-align: center;
+}
+
+.contact-icon {
+    position: absolute;
+
+    top: 22px;
+    right: 25px;
+
+    font-size: 30px;
+    color: #d5d9d7;
+}
+
+.contact-box h3 {
+    font-size: 20px;
+    font-weight: 400;
+
+    margin-bottom: 14px;
+}
+
+.contact-line {
+    margin-bottom: 20px;
+}
+
+.contact-box a {
+    text-decoration: none;
+    color: #222;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contact-box a:hover {
+    opacity: 0.55;
+}
+
+
+/* SOCIAL MEDIA */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+
+    margin-top: 120px;
+    padding-bottom: 35px;
+}
+
+.social-links a {
+    color: #6f7f7c;;
+    text-decoration: none;
+
+    font-size: 62px;
+
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+    opacity: 0.5;
+}
+
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid #222;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #222;
+    color: white;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        padding: 70px 7% 50px;
+    }
+
+    .contact-box {
+        min-height: 170px;
     }
 
 }

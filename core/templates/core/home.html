@@ -9,6 +9,13 @@
     <title>FORMA</title>
 
     <link rel="stylesheet" href="{% static 'core/style.css' %}">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -18,10 +25,10 @@
 
         <nav>
             <a href="#">Početna</a>
-            <a href="#">O nama</a>
-            <a href="#">Treninzi</a>
+<!--            <a href="#">O nama</a>-->
+            <a href="#training">Treninzi</a>
             <a href="#">Studio</a>
-            <a href="#">Kontakt</a>
+            <a href="#contact">Kontakt</a>
         </nav>
     </header>
 
@@ -40,7 +47,7 @@
     </section>
 
 
-    <!-- O MENI -->
+    <!-- MENI -->
     <section class="about">
 
         <div class="about-image-wrapper">
@@ -94,6 +101,78 @@
         </div>
 
     </section>
+
+
+    <!-- TRENING SEKCIJA -->
+    <section class="traning" id="training">
+
+        <div class="training-grid">
+
+            <p> OSTAVLJAM TEBI DA URADIS OVDE TRAINING SEKCIJU</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- KONTAKT SEKCIJA -->
+    <section class="contact-section" id="contact">
+
+        <div class="contact-grid">
+
+            <div class="contact-box">
+                <i class="fa-solid fa-phone contact-icon"></i>
+
+                <h3>Telefon</h3>
+                <div class="contact-line"></div>
+
+                <a href="tel:+381658880000">
+                    +381 65 888 00 00
+                </a>
+            </div>
+
+
+            <div class="contact-box">
+                <i class="fa-solid fa-location-dot contact-icon"></i>
+
+                <h3>Adresa</h3>
+                <div class="contact-line"></div>
+
+                <a href="https://maps.google.com/" target="_blank">
+                    Čačak, Srbija
+                </a>
+            </div>
+
+
+            <div class="contact-box">
+                <i class="fa-regular fa-envelope contact-icon"></i>
+
+                <h3>Email</h3>
+                <div class="contact-line"></div>
+
+                <a href="mailto:forma@example.com">
+                    forma@example.com
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="social-links">
+
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/381658880000" target="_blank" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
 
 </body>
 </html>
