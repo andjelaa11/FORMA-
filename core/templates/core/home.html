@@ -103,17 +103,209 @@
     </section>
 
 
-    <!-- TRENING SEKCIJA -->
-    <section class="traning" id="training">
+    <!-- TRENING / USLUGE SEKCIJA -->
+    <section class="training" id="training">
 
-        <div class="training-grid">
+        <div class="training-container">
 
-            <p> OSTAVLJAM TEBI DA URADIS OVDE TRAINING SEKCIJU</p>
+            <div class="training-heading">
+                <h2>NAŠE USLUGE</h2>
+                <div class="heading-line"></div>
+            </div>
+
+
+            <!-- PILATES STUDIO -->
+            <div class="service-category">
+
+                <h3 class="category-title">PILATES STUDIO</h3>
+
+                <div class="training-grid">
+
+                    <!-- REFORMER -->
+                    <div class="training-box">
+
+                        <div class="training-icon">
+                            <i class="fa-solid fa-person-running"></i>
+                        </div>
+
+                        <h3>REFORMER TRENINZI</h3>
+
+                        <button class="training-link"
+                                type="button"
+                                onclick="toggleService(this)">
+                            SAZNAJ VIŠE
+                        </button>
+
+                        <div class="training-description">
+
+                            <h4>Reformer treninzi (grupni / duo / individualni)</h4>
+
+                            <p>
+                                Aktivirajte duboke mišiće, poboljšajte fleksibilnost
+                                i pravilno držanje uz najpoznatiju spravu u svetu
+                                pilatesa.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- COMBO -->
+                    <div class="training-box">
+
+                        <div class="training-icon">
+                            <i class="fa-solid fa-chair"></i>
+                        </div>
+
+                        <h3>COMBO TRENINZI</h3>
+
+                        <button class="training-link"
+                                type="button"
+                                onclick="toggleService(this)">
+                            SAZNAJ VIŠE
+                        </button>
+
+                        <div class="training-description">
+
+                            <h4>Combo treninzi (Reformer &amp; Chair) (grupni / duo / individualni)</h4>
+
+                            <p>
+                                Dinamična kombinacija dve vrhunske sprave za
+                                maksimalnu snagu, stabilnost i raznovrsnost
+                                svakog treninga.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- NUTRICIONISTIČKO SAVETOVALIŠTE -->
+            <div class="service-category">
+
+                <h3 class="category-title">NUTRICIONISTIČKO SAVETOVALIŠTE</h3>
+
+                <div class="training-grid nutrition-grid">
+
+                    <!-- KONSULTACIJE -->
+                    <div class="training-box">
+
+                        <div class="training-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+
+                        <h3>STRUČNE KONSULTACIJE</h3>
+
+                        <button class="training-link"
+                                type="button"
+                                onclick="toggleService(this)">
+                            SAZNAJ VIŠE
+                        </button>
+
+                        <div class="training-description">
+
+                            <h4>Stručne konsultacije i savetovanje</h4>
+
+                            <p>
+                                Analiza vaših navika, ciljeva i zdravstvenog
+                                statusa uz individualan pristup i podršku.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ANTROPOMETRIJA -->
+                    <div class="training-box">
+
+                        <div class="training-icon">
+                            <i class="fa-solid fa-weight-scale"></i>
+                        </div>
+
+                        <h3>ANTROPOMETRIJSKA MERENJA</h3>
+
+                        <button class="training-link"
+                                type="button"
+                                onclick="toggleService(this)">
+                            SAZNAJ VIŠE
+                        </button>
+
+                        <div class="training-description">
+
+                            <h4>Kompletna antropometrijska merenja</h4>
+
+                            <p>
+                                Precizna procena telesne kompozicije: merenje
+                                visine, težine, BMI-a, kao i procenta masti i
+                                mišićne mase u telu.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- JELOVNIK -->
+                    <div class="training-box">
+
+                        <div class="training-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+
+                        <h3>PERSONALIZOVANA ISHRANA</h3>
+
+                        <button class="training-link"
+                                type="button"
+                                onclick="toggleService(this)">
+                            SAZNAJ VIŠE
+                        </button>
+
+                        <div class="training-description">
+
+                            <h4>Personalizovana izrada jelovnika (sedmodnevni / mesečni)</h4>
+
+                            <p>
+                                Prilagođeni planovi ishrane usklađeni sa vašim
+                                zdravstvenim stanjem, ritmom života i ciljevima
+                                (za opšte zdravlje, mršavljenje ili specifična
+                                zdravstvena stanja).
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
     </section>
 
+    <script>
+
+        function toggleService(button) {
+
+            const card = button.closest(".training-box");
+
+            card.classList.toggle("active");
+
+            if (card.classList.contains("active")) {
+                button.textContent = "SAKRIJ";
+            } else {
+                button.textContent = "SAZNAJ VIŠE";
+            }
+
+        }
+
+    </script>
 
     <!-- KONTAKT SEKCIJA -->
     <section class="contact-section" id="contact">
