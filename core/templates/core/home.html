@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FORMA</title>
+
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">FORMA</div>
+
+        <nav>
+            <a href="#">Početna</a>
+<!--            <a href="#">O nama</a>-->
+            <a href="#training">Treninzi</a>
+            <a href="#">Studio</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+    </header>
+
+    <!-- HERO SEKCIJA -->
+    <section class="hero">
+        <img
+            src="{% static 'core/images/home picture.jpg' %}"
+            alt="FORMA Pilates studio"
+            class="hero-image"
+        >
+
+        <div class="hero-overlay">
+            <h1>FORMA</h1>
+            <p>PILATES & NUTRITION</p>
+        </div>
+    </section>
+
+
+    <!-- MENI -->
+    <section class="about">
+
+        <div class="about-image-wrapper">
+            <img
+                src="{% static 'core/images/profile picture.jpg' %}"
+                alt="Ina Jerotić"
+                class="about-image"
+            >
+        </div>
+
+        <div class="about-content">
+
+            <h2>Zdravo!</h2>
+
+            <p>
+                Ja sam Iva Jevtović, diplomirani nutricionista-dijetetičar i
+                sertifikovani pilates instruktor (Reformer & Chair), kao i osnivač FORME — prvog studija
+                u Čačku koji objedinjuje pilates i stručni nutricionizam.
+            </p>
+
+            <p>
+                Moja stručna podloga potiče sa Visoke zdravstvene škole
+                strukovnih studija u Beogradu, a praktično iskustvo gradila
+                sam kroz praktični rad u kliničkim i primarnim zdravstvenim
+                ustanovama.
+            </p>
+
+            <p>
+                Forma je nastala iz ljubavi prema zdravom načinu života
+                i želje da stvorim mesto gde ljudi uče kako da se ponovo
+                osećaju dobro u svom telu.
+            </p>
+
+            <p>
+                Za mene, zdrava ishrana nije restriktivna dijeta, a pilates nije samo trening.
+                To je celovit pristup zdravlju, razumevanju sopstvenog tela i izgradnji dobrih navika.
+                Izbalansirana ishrana čuva naše zdravlje i prevenira oboljenja, dok pilates popravlja držanje,
+                jača telo i efikasno oslobađa od bolova u leđima i vratu uzrokovanih svakodnevnim stresom i sedenjem.
+
+            </p>
+
+            <p>
+                Šta vas očekuje u FORMI?
+                Pilates na spravama: Vežbamo na Reformeru, najpoznatijoj i najefikasnijoj spravi u svetu pilatesa, kao i na Pilates Chair-u — spravi koja pruža fantastičan izazov, razvija snagu i stabilnost i omogućava raznovrsne i dinamične treninge.
+                Individualizovana ishrana: Pomažemo svim generacijama — od dece i odraslih, do trudnica i porodilja. Posebno smo posvećeni izradi nutritivnih terapija za specifična stanja poput gojaznosti, metaboličkih i hormonskih poremećaja (dijabetes, Hašimoto, štitna žlezda), digestivnih smetnji (gastritis, intolerancija na laktozu i gluten, celijakija), poremećaja ishrane (anoreksija i bulimija), ali i radu sa svima koji jednostavno žele da unaprede svoj životni stil.
+                Naš studio je koncipiran kao elegantan, prozračan i topao prostor u kome je svaki detalj podređen vašem užitku i napretku.
+                Naš cilj je jasan: da vam pomognemo da postanete jači, zdraviji i zadovoljniji u svojoj koži.
+                Dobrodošli u FORMU — mesto gde telo i um konačno dolaze u potpunu harmoniju.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRENING / USLUGE SEKCIJA -->
+    <section class="training" id="training">
+
+        <div class="training-container">
+
+            <div class="training-heading">
+                <h2>NAŠE USLUGE</h2>
+                <div class="heading-line"></div>
+            </div>
+
+
+            <!-- PILATES STUDIO -->
+            <div class="service-category">
+
+                <h3 class="category-title">PILATES STUDIO</h3>
+
+                <div class="training-grid">
+
+                    <!-- REFORMER -->
+                    <div class="training-box">
+
+                        <div class="training-icon">
+                            <i class="fa-solid fa-person-running"></i>
+                        </div>
+
+                        <h3>REFORMER TRENINZI</h3>
+
+                        <button class="training-link"
+                                type="button"
+                                onclick="toggleService(this)">
+                            SAZNAJ VIŠE
+                        </button>
+
+                        <div class="training-description">
+
+                            <h4>Reformer treninzi (grupni / duo / individualni)</h4>
+
+                            <p>
+                                Aktivirajte duboke mišiće, poboljšajte fleksibilnost
+                                i pravilno držanje uz najpoznatiju spravu u svetu
+                                pilatesa.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- COMBO -->
+                    <div class="training-box">
+
+                        <div class="training-icon">
+                            <i class="fa-solid fa-chair"></i>
+                        </div>
+
+                        <h3>COMBO TRENINZI</h3>
+
+                        <button class="training-link"
+                                type="button"
+                                onclick="toggleService(this)">
+                            SAZNAJ VIŠE
+                        </button>
+
+                        <div class="training-description">
+
+                            <h4>Combo treninzi (Reformer &amp; Chair) (grupni / duo / individualni)</h4>
+
+                            <p>
+                                Dinamična kombinacija dve vrhunske sprave za
+                                maksimalnu snagu, stabilnost i raznovrsnost
+                                svakog treninga.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- NUTRICIONISTIČKO SAVETOVALIŠTE -->
+            <div class="service-category">
+
+                <h3 class="category-title">NUTRICIONISTIČKO SAVETOVALIŠTE</h3>
+
+                <div class="training-grid nutrition-grid">
+
+                    <!-- KONSULTACIJE -->
+                    <div class="training-box">
+
+                        <div class="training-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+
+                        <h3>STRUČNE KONSULTACIJE</h3>
+
+                        <button class="training-link"
+                                type="button"
+                                onclick="toggleService(this)">
+                            SAZNAJ VIŠE
+                        </button>
+
+                        <div class="training-description">
+
+                            <h4>Stručne konsultacije i savetovanje</h4>
+
+                            <p>
+                                Analiza vaših navika, ciljeva i zdravstvenog
+                                statusa uz individualan pristup i podršku.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ANTROPOMETRIJA -->
+                    <div class="training-box">
+
+                        <div class="training-icon">
+                            <i class="fa-solid fa-weight-scale"></i>
+                        </div>
+
+                        <h3>ANTROPOMETRIJSKA MERENJA</h3>
+
+                        <button class="training-link"
+                                type="button"
+                                onclick="toggleService(this)">
+                            SAZNAJ VIŠE
+                        </button>
+
+                        <div class="training-description">
+
+                            <h4>Kompletna antropometrijska merenja</h4>
+
+                            <p>
+                                Precizna procena telesne kompozicije: merenje
+                                visine, težine, BMI-a, kao i procenta masti i
+                                mišićne mase u telu.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- JELOVNIK -->
+                    <div class="training-box">
+
+                        <div class="training-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+
+                        <h3>PERSONALIZOVANA ISHRANA</h3>
+
+                        <button class="training-link"
+                                type="button"
+                                onclick="toggleService(this)">
+                            SAZNAJ VIŠE
+                        </button>
+
+                        <div class="training-description">
+
+                            <h4>Personalizovana izrada jelovnika (sedmodnevni / mesečni)</h4>
+
+                            <p>
+                                Prilagođeni planovi ishrane usklađeni sa vašim
+                                zdravstvenim stanjem, ritmom života i ciljevima
+                                (za opšte zdravlje, mršavljenje ili specifična
+                                zdravstvena stanja).
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        function toggleService(button) {
+
+            const card = button.closest(".training-box");
+
+            card.classList.toggle("active");
+
+            if (card.classList.contains("active")) {
+                button.textContent = "SAKRIJ";
+            } else {
+                button.textContent = "SAZNAJ VIŠE";
+            }
+
+        }
+
+    </script>
+
+    <!-- KONTAKT SEKCIJA -->
+    <section class="contact-section" id="contact">
+
+        <div class="contact-grid">
+
+            <div class="contact-box">
+                <i class="fa-solid fa-phone contact-icon"></i>
+
+                <h3>Telefon</h3>
+                <div class="contact-line"></div>
+
+                <a href="tel:+381607084550">
+                    +381 60 708 45 50
+                </a>
+            </div>
+
+
+            <div class="contact-box">
+                <i class="fa-solid fa-location-dot contact-icon"></i>
+
+                <h3>Adresa</h3>
+                <div class="contact-line"></div>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Kuželjeva+1%2C+Čačak%2C+Serbia" target="_blank">
+                    <p>Kuzeljeva 1,</p>
+                    <p>Čačak, Srbija</p>
+                </a>
+            </div>
+
+
+            <div class="contact-box">
+                <i class="fa-regular fa-envelope contact-icon"></i>
+
+                <h3>Email</h3>
+                <div class="contact-line"></div>
+
+                <a href="mailto:forma@example.com">
+                    forma@example.com
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="social-links">
+
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/381658880000" target="_blank" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+</body>
+</html>
