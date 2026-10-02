@@ -11,7 +11,7 @@ html {
 body {
     font-family: Arial, sans-serif;
     color: #222;
-    background-color: #f7f4ef;
+    background-color: #f5f0e8;
 }
 
 /* NAVIGATION BAR */
@@ -26,7 +26,7 @@ body {
 
     padding: 0 7%;
 
-    background-color: #f7f4ef;
+    background-color: #f5f0e8;
 }
 
 .logo {
@@ -522,7 +522,7 @@ body {
 .contact-section {
     font-family: "Lora", serif;
     padding: 80px 0 40px;
-    background-color: #f7f4ef;
+    background-color: #f5f0e8;
 }
 
 .contact-grid {
@@ -536,7 +536,9 @@ body {
 }
 
 .contact-box {
-    background-color: #eee9e2;
+
+    background: rgba(255, 255, 255, 0.60);
+
 
     position: relative;
     min-height: 220px;
@@ -547,9 +549,20 @@ body {
 
     padding: 25px 30px;
 
-    border: none;
+    border: 1px solid rgba(101, 0, 22, 0.06);
+    border-radius: 6px;
+
+    box-shadow: 0 3px 10px rgba(50, 30, 20, 0.05);
 
     text-align: center;
+        transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.contact-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(50, 30, 20, 0.08);
 }
 
 .contact-icon {
@@ -559,7 +572,7 @@ body {
     right: 25px;
 
     font-size: 30px;
-    color: #d5d9d7;
+    color: #650016;
 }
 
 .contact-box h3 {
@@ -598,7 +611,7 @@ body {
 }
 
 .social-links a {
-    color: #6f7f7c;;
+    color: #8F4A58;
     text-decoration: none;
 
     font-size: 62px;
