@@ -26,7 +26,7 @@
         <nav>
             <a href="#">Početna</a>
 <!--            <a href="#">O nama</a>-->
-            <a href="#training">Treninzi</a>
+            <a href="#training">Naše usluge</a>
             <a href="#">Studio</a>
             <a href="#contact">Kontakt</a>
         </nav>
@@ -35,16 +35,12 @@
     <!-- HERO SEKCIJA -->
     <!-- src="{% static 'core/images/home picture.jpg' %}"-->
     <section class="hero">
-        <img
-
-            alt="FORMA Pilates studio"
-            class="hero-image"
-        >
 
         <div class="hero-overlay">
             <h1>FORMA</h1>
             <p>PILATES & NUTRITION</p>
         </div>
+        
     </section>
 
 
@@ -120,7 +116,7 @@
 
                 <h3 class="category-title">PILATES STUDIO</h3>
 
-                <div class="training-grid">
+                <div class="training-grid pilates-grid">
 
                     <!-- REFORMER -->
                     <div class="training-box">
@@ -151,6 +147,36 @@
 
                     </div>
 
+                    <div class="training-box">
+
+                        <div class="training-icon">
+                            <i class="fa-solid fa-scroll"></i>
+                        </div>
+
+
+                        <h3>MAT PILATES</h3>
+
+                        <button class="training-link"
+                                type="button"
+                                onclick="toggleService(this)">
+                            SAZNAJ VIŠE
+                        </button>
+
+                        <div class="training-description">
+
+                            <h4>Mat Pilates treninzi</h4>
+
+                            <p>
+                                Ojačajte i oblikujte telo, poboljšajte držanje, 
+                                stabilnost i pokretljivost kroz kontrolisane Pilates 
+                                vežbe na strunjači, uz pažljivo odabrane rekvizite 
+                                poput bučica, traka i lopti.
+                            </p>
+
+                        </div>
+
+                    </div>
+
 
                     <!-- COMBO -->
                     <div class="training-box">
@@ -159,7 +185,7 @@
                             <i class="fa-solid fa-chair"></i>
                         </div>
 
-                        <h3>COMBO TRENINZI</h3>
+                        <h3>COMBO TRENINZI - Reformer &amp; Chair</h3>
 
                         <button class="training-link"
                                 type="button"
@@ -344,8 +370,8 @@
                 <h3>Email</h3>
                 <div class="contact-line"></div>
 
-                <a href="mailto:---@example.com">
-                    ---
+                <a href="mailto:studioforma.rs@gmail.com">
+                    studioforma.rs@gmail.com
                 </a>
             </div>
 

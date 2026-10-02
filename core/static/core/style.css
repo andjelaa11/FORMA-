@@ -11,14 +11,14 @@ html {
 body {
     font-family: Arial, sans-serif;
     color: #222;
-    background-color: #f7f4ef;
+    background-color: #f5f0e8;
 }
 
 /* NAVIGATION BAR */
 
 .navbar {
     width: 100%;
-    height: 90px;
+    height: 75px;
 
     display: flex;
     align-items: center;
@@ -26,13 +26,15 @@ body {
 
     padding: 0 7%;
 
-    background-color: #f7f4ef;
+     background-color: #ede5da;
 }
 
 .logo {
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 4px;
+    font-family: "Lora", serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #650016;
 }
 
 .navbar nav {
@@ -43,14 +45,13 @@ body {
 .navbar nav a {
     text-decoration: none;
     color: #222;
-
     font-size: 15px;
 
     transition: opacity 0.3s;
 }
 
 .navbar nav a:hover {
-    opacity: 0.5;
+    color: #650016;
 }
 
 
@@ -60,55 +61,38 @@ body {
 ================================= */
 
 .hero {
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 90px);
-    overflow: hidden;
-}
+    min-height: calc(100vh - 75px);
 
-.hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    /* bira koji deo slike ostaje najvidljiviji */
-    object-position: center;
-}
-
-.hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    background: rgba(0, 0, 0, 0.15);
+    background-color: #f5f0e8;
 }
 
 .hero-overlay {
-    position: absolute;
-    z-index: 2;
-
-    left: 50%;
-    top: 50%;
-
-    transform: translate(-50%, -50%);
-
     text-align: center;
-    color: white;
 }
 
 .hero-overlay h1 {
-    font-size: clamp(70px, 13vw, 190px);
-    font-weight: 400;
+    margin: 0;
 
-    letter-spacing: 12px;
-    line-height: 1;
+    font-family: "Lora", serif;
+    font-size: clamp(75px, 12vw, 160px);
+    font-weight: 400;
+    letter-spacing: 8px;
+
+    color: #650016;
 }
 
 .hero-overlay p {
-    margin-top: 18px;
+    margin-top: 15px;
 
-    font-size: 15px;
-    letter-spacing: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 6px;
+
+    color: #650016;
 }
 
 
@@ -244,6 +228,10 @@ body {
     max-width: 1100px;
 }
 
+.pilates-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1100px;
+}
 
 
 .training-box {
@@ -440,6 +428,7 @@ body {
         padding: 55px 25px 65px;
     }
 
+    .pilates-grid,
     .nutrition-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -517,7 +506,7 @@ body {
 .contact-section {
     font-family: "Lora", serif;
     padding: 80px 0 40px;
-    background-color: #f7f4ef;
+    background-color: #f5f0e8;
 }
 
 .contact-grid {
@@ -531,7 +520,9 @@ body {
 }
 
 .contact-box {
-    background-color: #eee9e2;
+
+    background: rgba(255, 255, 255, 0.60);
+
 
     position: relative;
     min-height: 220px;
@@ -542,9 +533,20 @@ body {
 
     padding: 25px 30px;
 
-    border: none;
+    border: 1px solid rgba(101, 0, 22, 0.06);
+    border-radius: 6px;
+
+    box-shadow: 0 3px 10px rgba(50, 30, 20, 0.05);
 
     text-align: center;
+        transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.contact-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(50, 30, 20, 0.08);
 }
 
 .contact-icon {
@@ -554,7 +556,7 @@ body {
     right: 25px;
 
     font-size: 30px;
-    color: #d5d9d7;
+    color: #650016;
 }
 
 .contact-box h3 {
@@ -574,10 +576,12 @@ body {
 
     font-size: 14px;
     line-height: 1.5;
+
+    transition: color 0.3s ease;
 }
 
 .contact-box a:hover {
-    opacity: 0.55;
+    color: #650016;
 }
 
 
@@ -593,16 +597,16 @@ body {
 }
 
 .social-links a {
-    color: #6f7f7c;;
+    color: #8F4A58;
     text-decoration: none;
 
     font-size: 62px;
 
-    transition: opacity 0.3s;
+    transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    opacity: 0.5;
+    color: #650016;
 }
 
 
