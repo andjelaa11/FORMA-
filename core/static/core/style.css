@@ -35,6 +35,7 @@ body {
     font-weight: 500;
     letter-spacing: 3px;
     color: #650016;
+    text-decoration: none;
 }
 
 .navbar nav {
@@ -761,6 +762,48 @@ body {
     color: #5d5959;
     margin-bottom: 15px;
 }
+
+
+/* Pricing */
+
+
+.pricing-section {
+    padding: 80px 7%;
+    background-color: #f5f0e8;
+    text-align: center;
+}
+
+.pricing-section h2 {
+    font-family: "Lora", serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #650016;
+    margin-bottom: 15px;
+}
+
+.pricing-section p {
+    font-size: 15px;
+    color: #5d5959;
+    margin-bottom: 30px;
+}
+
+.pricing-button {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid #650016;
+    border-radius: 50px;
+    color: #650016;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.pricing-button:hover {
+    background-color: #650016;
+    color: white;
+}
+
 
 /* TABLET */
 
