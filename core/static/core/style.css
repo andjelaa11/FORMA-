@@ -35,6 +35,7 @@ body {
     font-weight: 500;
     letter-spacing: 3px;
     color: #650016;
+    text-decoration: none;
 }
 
 .navbar nav {
@@ -94,6 +95,54 @@ body {
 
     color: #650016;
 }
+
+.hero-description {
+    max-width: 650px;
+    margin: 30px auto 0;
+    padding: 0 20px;
+
+    font-family: "Lora", serif;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #5d5959;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 16px 30px;
+
+    border: 1px solid #650016;
+    border-radius: 30px;
+
+    color: #650016;
+    text-decoration: none;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #650016;
+    color: white;
+}
+
+@media (max-width: 650px) {
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .hero-button {
+        max-width: 90%;
+        padding: 14px 20px;
+        font-size: 11px;
+        line-height: 1.6;
+    }
+}
+
 
 
 /* =================================
@@ -229,8 +278,8 @@ body {
 }
 
 .pilates-grid {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 1100px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
 }
 
 
@@ -673,4 +722,147 @@ body {
         min-height: 170px;
     }
 
+}
+
+
+
+/* REFORMER PILATES */
+
+.reformer-section {
+    padding: 80px 7%;
+    background-color: #f5f0e8;
+}
+
+.reformer-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.reformer-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+.reformer-heading h2 {
+    font-family: "Lora", serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #650016;
+    text-align: center;
+}
+
+.reformer-line {
+    width: 100px;
+    height: 1px;
+    background-color: #650016;
+}
+
+.reformer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.reformer-card h3 {
+    font-family: "Lora", serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #650016;
+    margin-bottom: 20px;
+}
+
+.reformer-card h4 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #650016;
+    margin-bottom: 15px;
+}
+
+.reformer-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #5d5959;
+    margin-bottom: 15px;
+}
+
+
+/* Pricing */
+
+
+.pricing-section {
+    padding: 80px 7%;
+    background-color: #f5f0e8;
+    text-align: center;
+}
+
+.pricing-section h2 {
+    font-family: "Lora", serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #650016;
+    margin-bottom: 15px;
+}
+
+.pricing-section p {
+    font-size: 15px;
+    color: #5d5959;
+    margin-bottom: 30px;
+}
+
+.pricing-button {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid #650016;
+    border-radius: 50px;
+    color: #650016;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.pricing-button:hover {
+    background-color: #650016;
+    color: white;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .reformer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+    .reformer-section {
+        padding: 55px 7%;
+    }
+
+    .reformer-heading {
+        gap: 12px;
+    }
+
+    .reformer-heading h2 {
+        font-size: 26px;
+    }
+
+    .reformer-line {
+        width: 35px;
+    }
+
+    .reformer-container > h2 {
+        font-size: 30px;
+    }
+
+    .reformer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
 }
